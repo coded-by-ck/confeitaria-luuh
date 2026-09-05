@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Confeitaria da Luuh: bolos artesanais feitos com carinho em Ivinhema - MS.">
+  <title>Confeitaria da Luuh | Bolos artesanais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Feito com carinho em Ivinhema <span aria-hidden="true">·</span> pedidos pelo WhatsApp</div>
+
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Confeitaria da Luuh, início">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>Confeitaria <em>da Luuh</em> <span aria-hidden="true">👩🏻‍🍳</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#entrega">Entrega</a>
+        <a href="#contato">Contato</a>
+        <a class="button button-small button-dark nav-order" href="#cardapio">Fazer pedido <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Confeitaria artesanal em Ivinhema</p>
+          <h1>Bolos feitos para deixar seu dia <i>mais gostoso.</i></h1>
+          <p class="hero-text">Sabores caseiros, massas especiais e aquele carinho que só a Confeitaria da Luuh tem.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#cardapio">Ver cardápio <span aria-hidden="true">↓</span></a>
+            <a class="text-link whatsapp-link" href="#" data-whatsapp-general> <span class="whatsapp-icon" aria-hidden="true">◌</span> Pedir pelo WhatsApp</a>
+          </div>
+          <div class="hero-note"><span class="note-stars" aria-hidden="true">★★★★★</span> Bolos que têm gosto de casa</div>
+        </div>
+        <div class="hero-art reveal reveal-delay" aria-label="Bolo artesanal de chocolate com cobertura cremosa">
+          <!-- Troque esta imagem pela foto real da confeitaria quando quiser. -->
+          <div class="hero-photo"></div>
+          <div class="hero-sticker"><span>feito</span><strong>com<br>carinho</strong></div>
+          <div class="hero-caption"><span class="caption-line"></span><span>Uma fatia<br>de felicidade</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights" aria-label="Destaques da confeitaria">
+      <div class="container highlights-grid">
+        <div class="highlight"><span class="highlight-icon">⌂</span><div><strong>A partir de R$ 20</strong><small>Delícias para todo momento</small></div></div>
+        <div class="highlight"><span class="highlight-icon">⌁</span><div><strong>Entrega em toda Ivinhema</strong><small>Receba onde estiver</small></div></div>
+        <div class="highlight"><span class="highlight-icon">◈</span><div><strong>Pix, cartão ou dinheiro</strong><small>Pagamento do seu jeito</small></div></div>
+        <div class="highlight"><span class="highlight-icon">✺</span><div><strong>Sabores artesanais</strong><small>Massas prontas ou naturais</small></div></div>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="cardapio">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span></span> O nosso cardápio</p><h2>Escolha o seu<br><i>novo favorito.</i></h2></div>
+          <p>Preparados com ingredientes selecionados e um toque especial de afeto.</p>
+        </div>
+        <div class="category-tabs" role="tablist" aria-label="Categorias do cardápio">
+          <button class="category-tab active" type="button" data-filter="todos" role="tab" aria-selected="true">Todos</button>
+          <button class="category-tab" type="button" data-filter="prontas" role="tab" aria-selected="false">Massas prontas</button>
+          <button class="category-tab" type="button" data-filter="naturais" role="tab" aria-selected="false">Massas naturais</button>
+          <button class="category-tab" type="button" data-filter="especiais" role="tab" aria-selected="false">Especiais</button>
+        </div>
+        <div class="products-grid" id="products-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="care-section section-pad">
+      <div class="container care-grid">
+        <div class="care-image reveal"><div class="care-image-inner"><span class="care-quote">“</span><span>Um detalhe feito à mão<br>muda tudo.</span></div></div>
+        <div class="care-copy reveal reveal-delay"><p class="eyebrow"><span></span> Feito com carinho</p><h2>O sabor de um momento <i>bem cuidado.</i></h2><p>Na Confeitaria da Luuh, cada bolo é preparado pensando em transformar momentos simples em momentos mais gostosos.</p><div class="signature">Confeitaria da Luuh <span>✦</span></div></div>
+      </div>
+    </section>
+
+    <section class="delivery-section section-pad" id="entrega">
+      <div class="container delivery-grid">
+        <div class="delivery-intro"><p class="eyebrow"><span></span> Simples assim</p><h2>Do nosso forno<br>para a <i>sua mesa.</i></h2><p>Você escolhe o sabor, a gente prepara com carinho e entrega fresquinho.</p></div>
+        <div class="delivery-details">
+          <div class="detail-row"><span class="detail-icon">⌁</span><div><small>Taxa de entrega</small><strong>R$ 5,00</strong><p>Para toda Ivinhema</p></div></div>
+          <div class="detail-row"><span class="detail-icon">◈</span><div><small>Formas de pagamento</small><strong>Pix, cartão ou dinheiro</strong><p>Na entrega ou combinando pelo WhatsApp</p></div></div>
+        </div>
+        <div class="delivery-badge"><span>feito para<br><strong>compartilhar</strong></span><span class="badge-icon">♡</span></div>
+      </div>
+    </section>
+
+    <section class="final-cta section-pad" id="contato">
+      <div class="container cta-inner"><p class="eyebrow eyebrow-light"><span></span> Um pedacinho de felicidade</p><h2>Se a sua fome fala mais alto,<br>venha experimentar as delícias<br>da <i>Confeitaria da Luuh.</i></h2><a class="button button-light whatsapp-link" href="#" data-whatsapp-general>Fazer meu pedido <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top"><a class="brand brand-footer" href="#inicio"><span class="brand-mark" aria-hidden="true">✦</span><span>Confeitaria <em>da Luuh</em></span></a><div class="footer-location"><strong>Ivinhema - MS</strong><span>Encomendas pelo WhatsApp</span></div><a class="footer-whatsapp whatsapp-link" href="#" data-whatsapp-general>WhatsApp <span aria-hidden="true">↗</span></a></div>
+    <div class="container footer-bottom"><span>© 2024 Confeitaria da Luuh</span><span>Pix <i>·</i> Cartão <i>·</i> Dinheiro</span><span>Feito com carinho <span aria-hidden="true">♡</span></span></div>
+  </footer>
+</body>
+</html>

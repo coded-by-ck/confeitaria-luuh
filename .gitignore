@@ -1,0 +1,15 @@
+# Dependências e caches
+node_modules/
+npm-debug.log*
+
+# Arquivos de ambiente e credenciais
+.env
+.env.*
+!.env.example
+
+# Saídas e arquivos locais do editor
+dist/
+build/
+.vscode/
+.DS_Store
+Thumbs.db
